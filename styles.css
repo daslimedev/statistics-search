@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ubuntu", BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #6374d850;
+    padding: 20px;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding: 2px;
+    background: linear-gradient(145deg, #0621ec, #c2c1c1ee);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    
+
+}
+
+.container {
+    width: 1000px;
+    padding: 48px;
+    background: rgb(223, 221, 221);
+    border-radius: 38px;
+    
+}
+
+.search-section {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.search-wrapper {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 26px 20px;
+    border: 1px solid #e6e8f0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.514);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(14, 0, 88, 0.63);
+}
+
+.search-bar i {
+    color: #98999b;
+    font-size: 16px;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    outline: rgb(163, 162, 162);
+    padding-left: 12px;
+    font-size: 15px;
+    color: #5a5959;
+    background-color: white;
+
+}
+
+.search-bar input::placeholder {
+    color: #9ba1b3;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.card {
+    padding: 32px;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.12);
+    background: linear-gradient(
+        to bottom right,
+        #c2bebe,
+        #fafafa
+    );
+}
+
+
+
+.calculator {
+    background-color: rgba(15, 31, 209, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(15, 31, 209, 0.1);
+    padding: 24px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.statistics {
+    background-color: rgba(201, 9, 99, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(201, 9, 99, 0.1);
+    padding: 24px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.table {
+    background-color: rgba(83, 241, 9, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(83, 241, 9, 0.1);
+    padding: 24px;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin-bottom: 24px;
+    min-height: 44px;
+    font-weight: 300;
+}
+
+.card-button {
+    border: 1px solid #161616;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.849);
+    border-radius: 100px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-button i {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.bottom-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    
+
+}
+
+.bottom-section h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.bottom-section p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin-bottom: 12px;
+}
+
+.bottom-section a {
+    color: #2D5AF7;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.bottom-section a:hover {
+    text-decoration: underline;
+}
